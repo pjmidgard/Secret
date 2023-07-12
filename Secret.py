@@ -124,8 +124,8 @@ class compression:
                                         raise SystemExit
                                 if i==1:
                                     from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(2**805306370)
-                                    circuit1 = QuantumCircuit(44739244) 
+                                    circuit = QuantumCircuit((2**256)+1)
+                                    circuit1 = QuantumCircuit(2**256//2**48) 
                                     k1=-2
                                     k2=-1
                                     k3=-2
@@ -143,7 +143,7 @@ class compression:
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
-                                            if k1==2**805306369::
+                                            if k1==2**256:
                                                 k1=-1
                                                 k2=0
                                             circuit.cp(University, k1, k2)
