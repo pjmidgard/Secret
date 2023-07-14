@@ -342,8 +342,8 @@ class compression:
                                                 long=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]                                                      
                                     from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(2**805306370)
-                                    circuit1 = QuantumCircuit(44739244) 
+                                    circuit = QuantumCircuit((2**256)+1)
+                                    circuit1 = QuantumCircuit(2**256//2**48) 
                                     k1=-2
                                     k2=-1
                                     k3=-2
@@ -361,7 +361,7 @@ class compression:
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
-                                            if k1==2**805306369:
+                                            if k1=2**256:
                                                 k1=-1
                                                 k2=0
                                             circuit.cp(University, k1, k2)
@@ -390,10 +390,6 @@ class compression:
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             counts+=1
-                                            if SQUEAR_OF_ROOT>=68719476736:
-                                                SQUEAR_OF_ROOT=0
-                                            if Times_12>=2**26:
-                                                Times_12=1
                                             if Divide==0:
                                             	Divide=1
                                             if Times_12==0:
