@@ -123,9 +123,7 @@ class compression:
                                         print("print file is too big!")
                                         raise SystemExit
                                 if i==1:
-                                    from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit((2**256)+1)
-                                    circuit1 = QuantumCircuit(2**256//2**48) 
+
                                     k1=-2
                                     k2=-1
                                     k3=-2
@@ -146,8 +144,7 @@ class compression:
                                             if k1==2**256:
                                                 k1=-1
                                                 k2=0
-                                            circuit.cp(University, k1, k2)
-                                            circuit1.cp(University, k3, k4)   
+
                                             University=int(k2)
                                             X1=int(k4)
                                             X2=X1
@@ -166,11 +163,11 @@ class compression:
                                                 k4=-1                                                                          
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
-                                            Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            Times_12+=1
+                                            Multiply+=1
+                                            Add_Numbers+=1
+                                            SQUEAR_OF_ROOT+=1
+                                            Multiply_Times+=1
                                             counts+=1
                                             if Divide==0:
                                             	Divide=1
@@ -224,8 +221,9 @@ class compression:
                                                             Number_of_the_file=0
                                                         Hole_Number_information=(2**Deep5)-1
                                                         Square_of_ROOT=Hole_Number_information
-                                                        Number_of_the_file=((Number_of_the_file*Square_of_ROOT)+Add_Numbers)
+                                                        Number_of_the_file=((Number_of_the_file*Square_of_ROOT)+Add_Numbers)*Times_12
                                                         Times_half_Real+=1
+                                                      
                                             File_information5_17=bin(Number_of_the_file)[2:]
                                             File_information5_2=File_information5_17
                                             if i==1:
@@ -341,9 +339,7 @@ class compression:
                                                 File_information5=File_information5[6:]
                                                 long=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]                                                      
-                                    from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit((2**256)+1)
-                                    circuit1 = QuantumCircuit(2**256//2**48) 
+
                                     k1=-2
                                     k2=-1
                                     k3=-2
@@ -364,8 +360,7 @@ class compression:
                                             if k1==2**256:
                                                 k1=-1
                                                 k2=0
-                                            circuit.cp(University, k1, k2)
-                                            circuit1.cp(University, k3, k4)   
+
                                             University=int(k2)
                                             X1=int(k4)
                                             X2=X1
@@ -384,11 +379,11 @@ class compression:
                                                 k4=-1
                                             University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
-                                            Add_Numbers=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            Times_12+=1
+                                            Multiply+=1
+                                            Add_Numbers+=1
+                                            SQUEAR_OF_ROOT+=1
+                                            Multiply_Times+=1
                                             counts+=1
                                             if Divide==0:
                                             	Divide=1
@@ -442,7 +437,7 @@ class compression:
                                                             Number_of_the_file=0
                                                         Hole_Number_information=(2**Deep5)-1
                                                         Square_of_ROOT=Hole_Number_information
-                                                        Number_of_the_file=((Number_of_the_file*Square_of_ROOT)+Add_Numbers)
+                                                        Number_of_the_file=((Number_of_the_file*Square_of_ROOT)+Add_Numbers)*Times_12
                                                         
                                                         Times_half_Real+=1
                                             File_information5_17=bin(Number_of_the_file)[2:]
