@@ -123,7 +123,9 @@ class compression:
                                         print("print file is too big!")
                                         raise SystemExit
                                 if i==1:
-
+                                    from qiskit.circuit import QuantumCircuit
+                                    circuit = QuantumCircuit((2**256)+1)
+                                    circuit1 = QuantumCircuit(2**256//2**48)  
                                     k1=-2
                                     k2=-1
                                     k3=-2
@@ -139,12 +141,16 @@ class compression:
                                     SQUEAR_OF_ROOT=-1
                                     Multiply_Times=0
                                     while Extract1!=1:
+                                            
                                             k1+=1
                                             k2+=1
                                             if k1==2**256:
                                                 k1=-1
                                                 k2=0
-
+                                                
+                                            circuit.cp(University, k1, k2)
+                                            circuit1.cp(University, k3, k4)   
+               
                                             University=int(k2)
                                             X1=int(k4)
                                             X2=X1
@@ -338,8 +344,10 @@ class compression:
                                                 Random_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
                                                 long=int(File_information5[:Random_C],2)
-                                                File_information5=File_information5[Random_C:]                                                      
-
+                                                File_information5=File_information5[Random_C:]                     
+                                    from qiskit.circuit import QuantumCircuit
+                                    circuit = QuantumCircuit((2**256)+1)
+                                    circuit1 = QuantumCircuit(2**256//2**48)               
                                     k1=-2
                                     k2=-1
                                     k3=-2
@@ -360,7 +368,9 @@ class compression:
                                             if k1==2**256:
                                                 k1=-1
                                                 k2=0
-
+                                            circuit.cp(University, k1, k2)
+                                            circuit1.cp(University, k3, k4)   
+               
                                             University=int(k2)
                                             X1=int(k4)
                                             X2=X1
