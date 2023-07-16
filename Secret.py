@@ -224,7 +224,7 @@ class compression:
                                                             Number_of_the_file=0
                                                         Hole_Number_information=(2**Deep5)-1
                                                         Square_of_ROOT=Hole_Number_information
-                                                        Number_of_the_file=((((Number_of_the_file*Square_of_ROOT)+Add_Numbers)//3)*Multiply)//Divide
+                                                        Number_of_the_file=((Number_of_the_file*Square_of_ROOT)+Add_Numbers)
                                                         Times_half_Real+=1
                                             File_information5_17=bin(Number_of_the_file)[2:]
                                             File_information5_2=File_information5_17
@@ -442,7 +442,8 @@ class compression:
                                                             Number_of_the_file=0
                                                         Hole_Number_information=(2**Deep5)-1
                                                         Square_of_ROOT=Hole_Number_information
-                                                        Number_of_the_file=((((Number_of_the_file*Square_of_ROOT)+Add_Numbers)//3)*Multiply)//Divide
+                                                        Number_of_the_file=((Number_of_the_file*Square_of_ROOT)+Add_Numbers)
+                                                        
                                                         Times_half_Real+=1
                                             File_information5_17=bin(Number_of_the_file)[2:]
                                             File_information5_2=File_information5_17
