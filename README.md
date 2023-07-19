@@ -12,7 +12,6 @@ size need to crated for secret (2**255)-1
                                             SQUEAR_OF_ROOT+=1
                                             Multiply_Times+=1
                                             counts+=1
-
                                             (2**256)+1
                                             2**256//2**48
                                             k=2**256
