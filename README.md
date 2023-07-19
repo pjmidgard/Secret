@@ -16,5 +16,6 @@ size need to crated for secret (2**255)-1
                                             2**256//2**48
                                             k=2**256
                                             Size=(2**255)-1
-                                            Numbers equals six vsrables combination secret.
+                                            Numbers equals six varables combination secret.
+                                            Secret has secret of dreams cores
 
